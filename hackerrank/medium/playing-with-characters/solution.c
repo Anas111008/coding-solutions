@@ -1,16 +1,23 @@
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <stdlib.h>
 
-int main() 
-{
-	
+int main() {
+    char ch;
     char s[100];
-    scanf("%[^\n]%*c", &s);
-  	printf("Hello, World!\n");
-    printf("%s",s);
-    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
-        
+    char sentence[100];
+
+    // Read a character
+    scanf("%c", &ch);
+
+    // Read a string
+    scanf("%s", s);
+
+    // Read a sentence
+    scanf(" %[^\n]%*c", sentence);
+
+    // Print the results
+    printf("%c\n", ch);
+    printf("%s\n", s);
+    printf("%s\n", sentence);
+
     return 0;
 }
